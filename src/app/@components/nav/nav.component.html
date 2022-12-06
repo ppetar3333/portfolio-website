@@ -1,1 +1,35 @@
-<p>nav works!</p>
+<div class="navigation">
+    <ul class="navigation__items">
+        <li class="box home active" (click)="navigation($event)">
+            <a href="#">
+                <span class="icon bi-house"></span>
+                <span class="label">Home</span>
+            </a>
+        </li>
+        <li class="box" (click)="navigation($event)">
+            <a href="#">
+                <span class="icon bi-person"></span>
+                <span class="label">About</span>
+            </a>
+        </li>
+        <li class="box" (click)="navigation($event)">
+            <a href="#">
+                <span class="icon bi-clock-history"></span>
+                <span class="label">Experience</span>
+            </a>
+        </li>
+        <li class="box" (click)="navigation($event)">
+            <a href="#">
+                <span class="icon bi-laptop"></span>
+                <span class="label">Work</span>
+            </a>
+        </li>
+        <li class="box" (click)="navigation($event)">
+            <a href="#">
+                <span class="icon bi-telephone"></span>
+                <span class="label">Contact</span>
+            </a>
+        </li>
+        <div class="indicator"></div>
+    </ul>
+</div>

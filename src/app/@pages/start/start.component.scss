@@ -15,6 +15,10 @@
   top: 0;
   transform: rotate(80deg);
   left: 0;
+
+  @media (max-width: 525px) {
+    margin-top: 1000px;
+  }
 }
 
 .wave {
