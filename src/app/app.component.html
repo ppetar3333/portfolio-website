@@ -1,1 +1,5 @@
-<router-outlet></router-outlet>
+<ng-container>
+    <start-page [ngClass]="{'fade-out' : hide}"></start-page>
+    <navigation *ngIf="show"></navigation>
+    <router-outlet *ngIf="show"></router-outlet>
+</ng-container>
