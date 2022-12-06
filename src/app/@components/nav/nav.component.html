@@ -1,35 +1,38 @@
-<div class="navigation">
+<div class="navigation" [ngClass]="{'fade-in' : isProcessing}">
     <ul class="navigation__items">
-        <li class="box home active" (click)="navigation($event)">
+        <li class="box home active" (click)="navigation($event, 'home')">
             <a href="#">
                 <span class="icon bi-house"></span>
                 <span class="label">Home</span>
             </a>
         </li>
-        <li class="box" (click)="navigation($event)">
+        <li class="box" (click)="navigation($event, 'about')">
             <a href="#">
                 <span class="icon bi-person"></span>
                 <span class="label">About</span>
             </a>
         </li>
-        <li class="box" (click)="navigation($event)">
+        <li class="box" (click)="navigation($event, 'expirience')">
             <a href="#">
                 <span class="icon bi-clock-history"></span>
                 <span class="label">Experience</span>
             </a>
         </li>
-        <li class="box" (click)="navigation($event)">
+        <li class="box" (click)="navigation($event, 'work')">
             <a href="#">
                 <span class="icon bi-laptop"></span>
                 <span class="label">Work</span>
             </a>
         </li>
-        <li class="box" (click)="navigation($event)">
+        <li class="box" (click)="navigation($event, 'contact')">
             <a href="#">
                 <span class="icon bi-telephone"></span>
                 <span class="label">Contact</span>
             </a>
         </li>
         <div class="indicator"></div>
+        <div class="copyright">
+            <p class="copyright__text">&copy; 2020 Copyright. Petar Petrovic</p>
+        </div>
     </ul>
 </div>
