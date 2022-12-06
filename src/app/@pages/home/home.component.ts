@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  public isProcessing: boolean = false;
 
   constructor() { }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
+    this.fadeIn();
   }
 
+  public fadeIn(): void {
+    setTimeout(() => {
+      this.isProcessing = true;
+    }, 50);
+  }
 }
