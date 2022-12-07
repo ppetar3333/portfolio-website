@@ -31,11 +31,6 @@ const routes: Routes = [
   {
     path: 'work',
     component: WorkComponent,
-  },
-  {
-    path: '**',
-    redirectTo: '',
-    pathMatch: 'full'
   }
 ];
 
