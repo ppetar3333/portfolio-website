@@ -9,17 +9,29 @@ import { Router } from '@angular/router';
 export class AppComponent implements OnInit{
   public hide: boolean = false;
   public show: boolean = false;
+  public item: any;
 
   constructor(
     private router: Router
   ) {}
 
   public ngOnInit(): void {
-    this.fadeOut();
-    this.fadeIn();
+    this.checkStartPage();
+  }
+
+  public checkStartPage(): void {
+    this.item = JSON.stringify(sessionStorage.getItem('fade-out'));
+    if (this.item === 'null') {
+      this.item = '';
+      this.fadeOut();
+      this.fadeIn();
+    } else {
+      this.show = true;
+    }
   }
 
   public fadeOut(): void {
+    sessionStorage.setItem('fade-out', JSON.stringify(true));
     setTimeout(() => {
       this.hide = true;
       this.router.navigate(['home']);

@@ -1,5 +1,7 @@
 <ng-container>
-    <start-page [ngClass]="{'fade-out' : hide}"></start-page>
-    <navigation *ngIf="show"></navigation>
-    <router-outlet *ngIf="show"></router-outlet>
+    <start-page *ngIf="!item" [ngClass]="{'fade-out' : hide}"></start-page>
+    <ng-container *ngIf="show">
+        <navigation></navigation>
+        <router-outlet></router-outlet>
+    </ng-container>
 </ng-container>
