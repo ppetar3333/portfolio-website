@@ -7,8 +7,18 @@ import { Router } from '@angular/router';
   styleUrls: ['./start.component.scss']
 })
 export class StartComponent implements OnInit {
-  constructor() { }
+  constructor(
+    private router: Router,
+  ) { }
 
   public ngOnInit(): void {
+    this.checkPath();
+  }
+
+  public checkPath(): void {
+    let item = sessionStorage.getItem('fade-out');
+    if (item === 'true') {
+      this.router.navigate(['home']);
+    }
   }
 }
