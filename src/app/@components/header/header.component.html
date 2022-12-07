@@ -1,7 +1,12 @@
 <div class="header">
-    <div class="header__wrapper">
+    <div class="header__wrapper" [ngClass]="{'fade-in' : isProcessing}">
         <div class="header__container">
-            
+            <div class="github">
+                <a target="blank" href="https://github.com/ppetar3333" class="bi bi-github icon"></a>
+            </div>
+            <div class="instagram">
+                <a target="blank" href="https://www.instagram.com/petrex_____/" class="bi bi-instagram icon"></a>
+            </div>
         </div>
     </div>
 </div>

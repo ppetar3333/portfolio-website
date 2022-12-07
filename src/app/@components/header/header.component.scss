@@ -1,0 +1,25 @@
+@import '../../../sources/abstract/mixins';
+
+.header {
+  position: relative;
+}
+
+.header__wrapper {
+  opacity: 0.1;
+  transition: 0.5s all ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: 0.5s all ease-in-out;
+}
+
+.icon {
+  color: black;
+  font-size: 40px;
+}
+
+.header__container {
+  @include center-space-between;
+  padding: 20px;
+}

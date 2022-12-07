@@ -15,7 +15,6 @@ export class NavComponent implements OnInit {
   ) { }
 
   public ngOnInit(): void { 
-    this.setupDefaultPage();
     this.fadeIn();
   }
 
@@ -25,12 +24,8 @@ export class NavComponent implements OnInit {
     }, 50);
   }
 
-  public setupDefaultPage(): void {
-    localStorage.setItem('current_page', `/home`);
-  }
-
   public navigation(event: any, route: string): void {
-    localStorage.setItem('current_page', `/${route}`);
+    localStorage.setItem('current_page', `${route}`);
     event.preventDefault();
     let box = this.el.nativeElement.querySelectorAll(".box");
     box.forEach((element: any) => { element.classList.remove('active'); });

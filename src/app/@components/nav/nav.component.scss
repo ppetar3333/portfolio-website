@@ -7,7 +7,7 @@
   align-items: center;
   transition: .6s;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #000;
   position: fixed;
   left: 50%;
   bottom: 0;
@@ -79,13 +79,19 @@
 
 .indicator {
   position: absolute;
-  background-color: #fff;
+  background-color: #000;
   height: 65px;
   width: 65px;
   border-radius: 50%;
   top: -50%;
   transition: .6s;
-  border: 4px solid #26252f;
+  border: 4px solid #282730;
+}
+
+.label,
+.icon {
+  color: white !important;
+  font-weight: bold;
 }
 
 .indicator::before{
@@ -98,7 +104,7 @@
   transform: translateY(1px);
   background-color: transparent;
   box-sizing: border-box;
-  box-shadow: 1px -10px 0 0 #26252f;
+  box-shadow: 1px -10px 0 0 #282730;
   border-top-right-radius: 20px;
 }
 
@@ -112,7 +118,7 @@
   transform: translateY(1px);
   background-color: transparent;
   box-sizing: border-box;
-  box-shadow: -1px -10px 0 0 #26252f;
+  box-shadow: -1px -10px 0 0 #282730;
   border-top-left-radius: 20px;
 }
 

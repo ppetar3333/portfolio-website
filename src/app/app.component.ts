@@ -16,6 +16,7 @@ export class AppComponent implements OnInit{
   ) {}
 
   public ngOnInit(): void {
+    this.router.navigate(['home']);
     this.checkStartPage();
   }
 
@@ -35,12 +36,12 @@ export class AppComponent implements OnInit{
     setTimeout(() => {
       this.hide = true;
       this.router.navigate(['home']);
-    }, 500);
+    }, 2200);
   }
 
   public fadeIn(): void {
     setTimeout(() => {
       this.show = true;
-    }, 1200);
+    }, 2900);
   }
 }
