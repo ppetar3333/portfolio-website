@@ -1,7 +1,27 @@
 <div class="contact">
     <div class="contact__wrapper" [ngClass]="{'fade-in' : isProcessing}">
-        <div class="contact__container">
-
+        <div class="contact__container container">
+			<h2 class="contact__heading">Contact</h2>
+            <form method="POST" action="#">
+                <div class="fields">
+                    <div class="field half">
+                        <label for="Name">Name</label>
+                        <input type="text" name="name" id="name" />
+                    </div>
+                    <div class="field half">
+                        <label for="Email">Email</label>
+                        <input type="text" name="email" id="email" />
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea name="Message" id="message" rows="4"></textarea>
+                    </div>
+                </div>
+                <ul class="actions">
+                    <li><input type="submit" value="Send Message" class="primary"/></li>
+                    <li><input type="reset" value="Reset" /></li>
+                </ul>
+            </form>
         </div>
     </div>
 </div>
