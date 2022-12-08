@@ -28,6 +28,7 @@ import { MdbScrollspyModule } from 'mdb-angular-ui-kit/scrollspy';
 import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
+import { TypingAnimatorModule } from 'angular-typing-animator'
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    TypingAnimatorModule,
     CommonUiModule,
     BrowserAnimationsModule,
     MdbAccordionModule,
