@@ -14,9 +14,18 @@
 .home__wrapper {
   opacity: 0.1;
   transition: 0.5s all ease-in-out;
+  @include center-absolute;
 }
 
 .fade-in {
   opacity: 1;
   transition: 0.5s all ease-in-out;
+}
+
+.home__container-text {
+  font-size: 40px;
+  font-family: 'Architects Daughter', cursive;
+  font-weight: bold;
+  letter-spacing: 11px;
+  color: rgb(19, 19, 19);
 }

@@ -13,6 +13,7 @@ import { AboutComponent } from './@pages/about/about.component';
 import { ContactComponent } from './@pages/contact/contact.component';
 import { ExperienceComponent } from './@pages/experience/experience.component';
 import { WorkComponent } from './@pages/work/work.component';
+import { TypingAnimatorModule } from 'angular-typing-animator'
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { WorkComponent } from './@pages/work/work.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    TypingAnimatorModule,
     CommonUiModule,
     BrowserAnimationsModule
   ],
