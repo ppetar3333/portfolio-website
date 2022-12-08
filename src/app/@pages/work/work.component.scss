@@ -27,10 +27,6 @@
   transition: 0.5s all ease-in-out;
 }
 
-.work__info {
-  color: black !important;
-}
-
 
 .work__slider-wrapper {
   display: flex;
@@ -73,6 +69,40 @@ $cubeDepth: $cubeHeight;
 
 .separator {
   margin-top: 40px;
+}
+
+.work__info--img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.work__info--title {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(18, 18, 18);
+}
+
+.work__info--desc {
+  margin: 40px 0;
+  line-height: 30px;
+  color: rgb(19, 19, 19) !important;
+}
+
+.work__info--link a {
+  letter-spacing: 18px;
+  font-weight: bold;
+  color: blue;
+  position: relative;
+}
+
+.work__info--link a::after {
+  content: "";
+  background: blue;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  height: 1px;
+  width: 208px;
 }
 
 /* 3D Cube */
