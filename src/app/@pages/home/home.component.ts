@@ -7,8 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   public isProcessing: boolean = false;
+  public sentences: Array<string> = [];
 
-  constructor() { }
+  constructor() { 
+    this.sentences = [
+      "Hello!",
+      "I'm Petar Petrović",
+      "Welcome to my website!"
+    ]
+  }
 
   public ngOnInit(): void {
     this.fadeIn();

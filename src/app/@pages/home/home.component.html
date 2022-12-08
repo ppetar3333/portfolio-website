@@ -1,7 +1,12 @@
 <div class="home">
     <div class="home__wrapper" [ngClass]="{'fade-in' : isProcessing}">
         <div class="home__container">
-            
+            <span 
+                class="home__container-text"
+                typingAnimator 
+                [showCursor]="false"
+                [sentences]="sentences">
+            </span>  
         </div>
     </div>
 </div>
