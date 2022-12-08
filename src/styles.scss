@@ -5,5 +5,21 @@
 @import "../src/sources/utilities/container";
 @import "../src/sources/components/spinner";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import "~mdb-angular-ui-kit/assets/scss/mdb.scss";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+
+@import "~mdb-angular-ui-kit/assets/scss/mdb.scss";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: black;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

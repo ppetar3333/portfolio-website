@@ -1,7 +1,76 @@
 <div class="work">
-    <div class="work__wrapper" [ngClass]="{'fade-in' : isProcessing}">
-        <div class="work__container">
-
-        </div>
+    <div class="work__wrapper container" [ngClass]="{'fade-in' : isProcessing}">
+        <mdb-carousel [controls]="true" [animation]="'fade'" class="carousel-dark" data-bs-ride="carousel" data-bs-interval="false">
+            <mdb-carousel-item>
+                <div class="work__slider-wrapper">
+                    <div class="work__info-wrapper">
+                        <p class="work__info">Marvel Application</p>
+                        <p class="work__info"><a href="https://ppetar3333.github.io/Marvel-App/" target="_blank">Live Demo</a></p>
+                        <p class="work__info">About project is this section. About project is this section. About project is this section. About project is this section. About project is this section.</p>
+                        <p class="work__info">React along with SCSS</p>
+                    </div>
+                    <div class="work__container">
+                        <ng-container> 
+                            <input class="radio-button" type="radio" checked id="radio-front" name="select-face"/>    
+                            <input class="radio-button" type="radio" id="radio-left" name="select-face"/>
+                            <input class="radio-button" type="radio" id="radio-right" name="select-face"/>
+                            <input class="radio-button" type="radio" id="radio-top" name="select-face"/>
+                            <input class="radio-button" type="radio" id="radio-bottom" name="select-face"/>
+                            <input class="radio-button" type="radio" id="radio-back" name="select-face"/>
+                        </ng-container>
+                    
+                        <div class="separator spacing"></div>
+               
+                        <div class="space3d">
+                            <div class="_3dbox">
+                                <div class="_3dface _3dface--front" style="background: url(../../../assets/images/marvel/first.png);"></div>
+                                <div class="_3dface _3dface--top" style="background: url(../../../assets/images/marvel/second.png);"></div>
+                                <div class="_3dface _3dface--bottom" style="background: url(../../../assets/images/marvel/third.png);"></div>
+                                <div class="_3dface _3dface--left" style="background: url(../../../assets/images/marvel/fourth.png);"></div>
+                                <div class="_3dface _3dface--right" style="background: url(../../../assets/images/marvel/second.png);"></div>
+                                <div class="_3dface _3dface--back" style="background: url(../../../assets/images/marvel/third.png);"></div>
+                            </div>
+                        </div>       
+            
+                        <div class="separator"></div>
+                    </div>
+                </div>
+            </mdb-carousel-item>
+            <mdb-carousel-item>
+                <div class="work__slider-wrapper">
+                    <div class="work__info-wrapper">
+                        <p>Marvel Application</p>
+                        <p><a href="https://ppetar3333.github.io/Marvel-App/" target="_blank">Live Demo</a></p>
+                        <p>About project is this section. About project is this section. About project is this section. About project is this section. About project is this section.</p>
+                        <p>React along with SCSS</p>
+                    </div>
+                    <div class="work__container">
+                        <ng-container> 
+                            <input class="radio-button" type="radio" checked id="radio-front" name="select-face"/>    
+                            <input class="radio-button" type="radio" id="radio-left" name="select-face"/>
+                            <input class="radio-button" type="radio" id="radio-right" name="select-face"/>
+                            <input class="radio-button" type="radio" id="radio-top" name="select-face"/>
+                            <input class="radio-button" type="radio" id="radio-bottom" name="select-face"/>
+                            <input class="radio-button" type="radio" id="radio-back" name="select-face"/>
+                        </ng-container>
+                    
+                        <div class="separator spacing"></div>
+               
+                        <div class="space3d">
+                            <div class="_3dbox">
+                                <div class="_3dface _3dface--front" style="background: url(../../../assets/images/marvel/first.png);"></div>
+                                <div class="_3dface _3dface--top" style="background: url(../../../assets/images/marvel/second.png);"></div>
+                                <div class="_3dface _3dface--bottom" style="background: url(../../../assets/images/marvel/third.png);"></div>
+                                <div class="_3dface _3dface--left" style="background: url(../../../assets/images/marvel/fourth.png);"></div>
+                                <div class="_3dface _3dface--right" style="background: url(../../../assets/images/marvel/second.png);"></div>
+                                <div class="_3dface _3dface--back" style="background: url(../../../assets/images/marvel/third.png);"></div>
+                            </div>
+                        </div>       
+            
+                        <div class="separator"></div>
+                    </div>
+                </div>
+            </mdb-carousel-item>
+        </mdb-carousel>
     </div>
 </div>
