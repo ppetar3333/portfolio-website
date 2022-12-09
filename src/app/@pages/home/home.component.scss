@@ -15,6 +15,16 @@
   opacity: 0.1;
   transition: 0.5s all ease-in-out;
   @include center-absolute;
+  width: 50rem;
+  text-align: center;
+
+  @media (max-width: 800px) {
+    width: 40rem;
+    max-width: 100%;
+    line-height: 42px;
+    text-align: center;
+    padding: 0 20px;
+  }
 }
 
 .fade-in {
