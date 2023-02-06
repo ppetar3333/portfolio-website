@@ -8,6 +8,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 1000px;
+  @include center-grid;
 }
 
 .experience__wrapper {
@@ -18,4 +20,85 @@
 .fade-in {
   opacity: 1;
   transition: 0.5s all ease-in-out;
+}
+
+.experience__content {
+  @include center-space-around;
+  margin-bottom: 150px;
+  min-height: 700px;
+
+  @media (max-width: 1200px) {
+    display: block;
+    text-align: center;
+    margin-top: 200px;
+    max-height: 400px;
+    margin-bottom: 0;
+  }
+}
+
+.experience__logo-img {
+  width: 250px;
+
+  @media (max-width: 768px) {
+    width: 180px;
+  }
+
+  @media (min-width: 320px) and (max-width: 425px) {
+    width: 110px;
+  }
+}
+
+.experience__logo--resize {
+  @media (max-width: 768px) {
+    width: 180px;
+  }
+
+  @media (min-width: 320px) and (max-width: 425px) {
+    width: 110px;
+  }
+}
+
+.experience__desc {
+  max-width: 420px;
+  margin: 40px 0;
+  line-height: 30px;
+  color: #131313 !important;
+  font-weight: bold;
+
+  @media (max-width: 1200px) {
+    padding: 0 90px;
+    max-width: 100%;
+  }
+
+  @media (max-width: 425px) {
+    padding: 0 30px;
+    max-width: 100%;
+    line-height: 25px;
+    font-size: 12px;
+  }
+}
+
+.experience__title {
+  font-size: 27px;
+  font-weight: bold;
+  color: #121212;
+  line-height: 24px;
+}
+
+.experience__duration {
+  color: rgb(24, 24, 24);
+  font-size: 13px;
+}
+
+.experience__info {
+  color: black;
+}
+
+::ng-deep .carousel-control-prev,
+::ng-deep .carousel-control-next {
+  margin-bottom: 224px !important;
+}
+
+.experience__logo--special {
+  opacity: 0.5;
 }

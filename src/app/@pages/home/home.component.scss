@@ -33,9 +33,13 @@
 }
 
 .home__container-text {
-  font-size: 40px;
+  font-size: 55px;
   font-family: 'Architects Daughter', cursive;
   font-weight: bold;
   letter-spacing: 11px;
   color: rgb(19, 19, 19);
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    font-size: 40px;
+  }
 }
