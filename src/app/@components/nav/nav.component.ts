@@ -29,8 +29,12 @@ export class NavComponent implements OnInit {
     event.preventDefault();
     let box = this.el.nativeElement.querySelectorAll(".box");
     box.forEach((element: any) => { element.classList.remove('active'); });
-    if (event.path[2].classList[0] === 'box') {
-      event.path[2].classList.add('active');
+    if(event.path) {
+      if (event.path[2].classList[0] === 'box') {
+        event.path[2].classList.add('active');
+      } else {
+        event.path[1].classList.add('active');
+      }
     } else {
       event.path[1].classList.add('active');
     }
