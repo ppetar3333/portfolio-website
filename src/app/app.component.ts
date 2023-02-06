@@ -18,6 +18,7 @@ export class AppComponent implements OnInit{
   public ngOnInit(): void {
     this.router.navigate(['home']);
     this.checkStartPage();
+    this.checkLocalStorage();
   }
 
   public checkStartPage(): void {
@@ -28,6 +29,13 @@ export class AppComponent implements OnInit{
       this.fadeIn();
     } else {
       this.show = true;
+    }
+  }
+
+  public checkLocalStorage(): void {
+    if (!localStorage.getItem('current_page')) {
+      localStorage.setItem('current_page', 'home');
+      this.router.navigate(['home']);
     }
   }
 
