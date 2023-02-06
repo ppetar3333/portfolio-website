@@ -29,14 +29,11 @@ export class NavComponent implements OnInit {
     event.preventDefault();
     let box = this.el.nativeElement.querySelectorAll(".box");
     box.forEach((element: any) => { element.classList.remove('active'); });
-    if(event.path) {
-      if (event.path[2].classList[0] === 'box') {
-        event.path[2].classList.add('active');
-      } else {
-        event.path[1].classList.add('active');
-      }
+    var path = event.composedPath ? event.composedPath() : event.path;
+    if (path[2].classList[0] === 'box') {
+      path[2].classList.add('active');
     } else {
-      event.path[1].classList.add('active');
+      path[1].classList.add('active');
     }
     this.changeRoute(route);
   }
